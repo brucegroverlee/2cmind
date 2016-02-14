@@ -1,20 +1,23 @@
 
 /*** view's *********************************/
 
-$view-min-height = 300px;
+$view-min-height = 480px;
 
 .view {
 	min-height: $view-min-height;
 }
 
 
-$View-1-backgroundColor= #99FF76;
+$View-1-backgroundColor= #FFFFFF;
 $View-2-backgroundColor= #84D867;
-$View-3-backgroundColor= #71B858;
-$View-4-backgroundColor= #5F9B4A;
+$View-2-Color-1= #022D51;
+$View-2-Color-2= #20719E;
+$View-3-backgroundColor= #EEEEEE;
+$View-4-backgroundColor= #FFFFFF;
+$View-4-Color= #022D51;
 
 #view-0, #view-1, #view-2, #view-3, #view-4 {
-
+	width: 100%;
 }
 
 #view-0 {
@@ -24,27 +27,121 @@ $View-4-backgroundColor= #5F9B4A;
 
 #view-1 {
 	background-color: $View-1-backgroundColor;
+	background-image: url("../img/slice1-background-mobile.png");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*padding-top: 100px;*/
+}
+
+#view-1 .text {
+    color: $View-1-backgroundColor;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#view-1 .flex-content {
+    display: flex;
+    justify-content: center;
+}
+#view-1 .btn {
+	margin: auto;
 }
 
 #view-2 {
 	background-color: $View-2-backgroundColor;
+	background-image: url("../img/slice2-background-mobile.png");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#view-2 .flex-content {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#view-2 #text-1 {
+    color: $View-2-Color-1;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#view-2 #text-2 {
+    color: $View-2-Color-2;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
 }
 
 #view-3 {
 	background-color: $View-3-backgroundColor;
 }
 
+#view-3 .flex-content .flex-content {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#view-3 #text-1 {
+    color: $View-2-Color-1;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#view-3 #text-2 {
+    color: $View-2-Color-2;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
 #view-4 {
 	background-color: $View-4-backgroundColor;
+    min-height: 420px;
+}
+
+#view-4 #text-1 {
+    color: $View-2-Color-1;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+#view-4 .flex-content .flex-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*** footer's *********************************/
 
 $footer-Color = #E0DFDF;
-$footer-BackgroundColor = #414141;
+$footer-BackgroundColor = #0099FF;
 
 footer {
 	color: $footer-Color;
 	background-color: $footer-BackgroundColor;
-	min-height: 300px;
+	/*min-height: 100px;*/
+    padding: 10px;
+}
+
+footer .flex-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .author {
+    color: #69C3FF;
+    padding-top: 10px;
 }

@@ -1,0 +1,5 @@
+commit 8d226ec049f25b2cc111c4f590d2e249977f8b0c
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Sat Feb 13 21:04:01 2016 -0500
+
+    Start of the project

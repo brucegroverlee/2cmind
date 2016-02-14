@@ -17,6 +17,11 @@ var config = {
     watch: frontendPath + '*.html',
     copy: publicPath + ''
   },
+  img: {
+    origin: frontendPath + 'img/*.*',
+    watch: frontendPath + 'img/*.*',
+    copy: publicPath + 'img'
+  },
   styl: {
     main: frontendPath + 'styl/bundle.styl',
     watch: frontendPath + 'styl/*.styl',
@@ -39,6 +44,11 @@ gulp.task('copy-html', function () {
     .pipe(gulp.dest(config.html.copy))
 })
 
+gulp.task('copy-img', function () {
+  gulp.src(config.img.origin)
+    .pipe(gulp.dest(config.img.copy))
+})
+
 gulp.task('build-css', function () {
   gulp.src(config.styl.main)
     .pipe(stylus())
@@ -57,6 +67,7 @@ gulp.task('build-js', function () {
 gulp.task('build-frontend', [
   'copy-fonts', 
   'copy-html', 
+  'copy-img', 
   'build-css',
   'build-js'
 ])
@@ -64,6 +75,7 @@ gulp.task('build-frontend', [
 gulp.task('watch', function () {
   gulp.watch(config.fonts.watch, ['copy-fonts'])
   gulp.watch(config.html.watch, ['copy-html'])
+  gulp.watch(config.img.watch, ['copy-img'])
   gulp.watch(config.styl.watch, ['build-css'])
   gulp.watch(config.js.watch, ['build-js'])
 })
@@ -80,6 +92,7 @@ gulp.task('server', function () {
 gulp.task('default', [
   'copy-fonts', 
   'copy-html', 
+  'copy-img', 
   'build-css',
   'build-js',
   'watch',

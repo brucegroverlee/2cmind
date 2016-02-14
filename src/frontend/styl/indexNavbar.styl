@@ -1,11 +1,31 @@
 .header {
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
+	color: #FFFFFF;
 	height: 64px;
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	z-index: 10;
+	border-bottom: #FFFFFF 1px solid; 
+}
+
+font-color = #3D3D3D;
+
+.header-white {
+	background-color: #FFFFFF;
+	color: font-color;
+	border-bottom: font-color 1px solid; 
+	transition: background-color .3s ease;
+	transition: color .3s ease;
+}
+
+.header-moved {
+	background-color: #FFFFFF;
+	color: font-color;
+	border-bottom: font-color 1px solid; 
+	transition: background-color .3s ease;
+	transition: color .3s ease;
 }
 
 .header-mobile {
@@ -25,12 +45,13 @@
 .header-btn-nav {
 	order: 2;
 	border: 0px;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
+	background-color: rgba(255,255,255,0.0);
 	margin-right: 1rem;
 }
 
 .header-menu-navbar {
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 }
 
 .header-menu-list {
@@ -41,6 +62,8 @@
 
 .header-menu-list-show {
 	height: 280px;
+	background-color: #FFFFFF;
+	transition: background-color .3s ease;
 }
 
 .header-menu-list-item {
@@ -54,12 +77,7 @@
 	background-color: #F1EFEF;
 }
 
-@media (min-width: 768px) {
-	#view-0 {
-		min-height: 80px;
-		background-color: #DEDEDE;
-	}
-	
+@media (min-width: 760px) {
 	.header {
 		display: flex;
 		flex-direction: row;
