@@ -1,0 +1,37 @@
+{
+  "name": "2cmind",
+  "version": "0.1.0",
+  "description": "official site of 2cmind",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucegroverlee/2cmind.git"
+  },
+  "keywords": [
+    "2cmind",
+    "daemon",
+    "daemonjs"
+  ],
+  "author": "bruce grover lee <brucegrover.lee@2gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucegroverlee/2cmind/issues"
+  },
+  "homepage": "https://github.com/brucegroverlee/2cmind#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify -t [ babelify --presets [ es2015 ] ] src/frontend/js/bundle.js > _dist/public/js/bundle.js"
+  },
+  "devDependencies": {
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.1",
+    "gulp-stylus": "^2.2.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "jquery": "^2.2.0"
+  }
+}
