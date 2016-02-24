@@ -1,6 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import cookieParser from 'cookie-parser'
+//import cookieParser from 'cookie-parser'
 import expressSession from 'express-session'
 import passport from 'passport'
 import mongoose from 'mongoose'
@@ -27,7 +27,7 @@ var User = mongoose.model('User',{
 
 router.use(bodyParser.json())
 router.use(bodyParser.urlencoded({ extended: false }))
-router.use(cookieParser())
+//router.use(cookieParser())
 router.use(expressSession({ secret: '2cmind sessions', resave: false, saveUninitialized: true }))
 router.use(passport.initialize())
 router.use(passport.session())

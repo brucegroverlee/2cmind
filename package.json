@@ -22,6 +22,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-js": "browserify -t [ babelify --presets [ es2015 ] ] src/frontend/js/bundle.js > _dist/public/js/bundle.js",
     "engine": "babel-node src/backend/index.js --presets es2015",
+    "serve": "npm run engine",
     "start": "gulp build-frontend && npm run engine"
   },
   "devDependencies": {

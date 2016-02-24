@@ -1,5 +1,30 @@
+commit f1829388a45dd2764e39e3fd573360c25362dd0e
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Mon Feb 22 18:35:55 2016 -0500
+
+    Session api was made
+
+commit 02668491241ecd4806c476a84c7dad3e991ec32a
+Merge: 8b5a1a4 bc4602e
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Sun Feb 14 18:44:37 2016 -0500
+
+    fix merge problem
+
+commit 8b5a1a4c57c7fcdaa2d2a74d9cc18815dd9a82e2
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Sun Feb 14 18:40:37 2016 -0500
+
+    frontend is ok. In this point will start code the server
+
 commit 8d226ec049f25b2cc111c4f590d2e249977f8b0c
 Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
 Date:   Sat Feb 13 21:04:01 2016 -0500
 
     Start of the project
+
+commit bc4602e5f2b8d38f95b683637982125f805af661
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Sat Feb 13 15:42:18 2016 -0500
+
+    Initial commit
