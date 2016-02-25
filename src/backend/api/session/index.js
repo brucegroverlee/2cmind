@@ -137,7 +137,13 @@ router.post('/signup', passport.authenticate('signup'), function (request, respo
   console.log('Post signup request: '+name+', '+email+', '+password+';')
   response.json({ 
   	error: 'none',
-  	message: 'signup ok ;)'
+  	message: 'signup ok ;)',
+    user: {
+      id: request.user.id,
+      name: request.user.name,
+      email: request.user.email,
+      key: request.user.key
+    }
   })
 })
 
@@ -145,7 +151,13 @@ router.post('/login', passport.authenticate('local'), function (request, respons
 	console.log('Post login request: '+request.user.name+', '+request.user.key+';')
   response.json({ 
   	error: 'none',
-  	message: 'login ok ;)'
+  	message: 'login ok ;)',
+    user: {
+      id: request.user.id,
+      name: request.user.name,
+      email: request.user.email,
+      key: request.user.key
+    }
   })
 })
 
