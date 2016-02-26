@@ -2,11 +2,10 @@
 * THIS IS THE CLASS DAEMON
 */
 
-function create () {}
-
-function load () {}
-
-module.exports = {
-  create: create,
-  load: load
+function Daemon () {
+  this.key = 0
 }
+
+Daemon.prototype.create = function () {}
+
+module.exports = Daemon
