@@ -24,6 +24,10 @@ var User = mongoose.model('User',{
   password: String,
   key: String
 })
+/*
+var Daemon = mongoose.model('Daemon', {
+
+})*/
 
 router.use(bodyParser.json())
 router.use(bodyParser.urlencoded({ extended: false }))

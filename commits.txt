@@ -1,3 +1,21 @@
+commit fde3cb51642385416bfec98a189e482606fa73b8
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Thu Feb 25 14:27:11 2016 -0500
+
+    http server and socket.io works together. ;)
+
+commit e3e29a5884e92196016dd87a73565c12a7ffbfba
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Thu Feb 25 03:00:31 2016 -0500
+
+    server sends information of users ok
+
+commit 076861aece5fc07e3fcf817209aec156ddb1a5cf
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Tue Feb 23 23:46:01 2016 -0500
+
+    http post request is ok
+
 commit f1829388a45dd2764e39e3fd573360c25362dd0e
 Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
 Date:   Mon Feb 22 18:35:55 2016 -0500
